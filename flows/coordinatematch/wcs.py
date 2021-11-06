@@ -224,4 +224,4 @@ class WCS2():
 	#----------------------------------------------------------------------------------------------
 	def __repr__(self):
 		ra, dec = self.astropy_wcs.wcs_pix2world([(0, 0)], 0)[0]
-		return f'WCS2(0, 0, {ra:.4f}, {dec:.4f}, {self.scale:.2f}, {self.mirror}, {self.angle:.2f})'
+		return f'WCS2(0, 0, {ra:f}, {dec:f}, {self.scale:f}, {self.mirror}, {self.angle:f})'
